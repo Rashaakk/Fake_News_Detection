@@ -1,0 +1,4 @@
+model,accuracy,precision,recall,f1,roc_auc,confusion_matrix
+Logistic Regression,0.861,0.874,0.843,0.858,0.923,
+XGBoost,0.879,0.891,0.862,0.876,0.941,
+BERT (DistilBERT),0.5466666666666666,0.5443037974683544,0.5733333333333334,0.5584415584415584,0.5075555555555555,"[[39, 36], [32, 43]]"
