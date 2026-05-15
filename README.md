@@ -1,11 +1,11 @@
 # Fake_News_Detection
 
-Transformer Models and Deep Learning
-Overview
+**Transformer Models and Deep Learning
+Overview**
 
 This section implements transformer-based fake news detection using BERT/DistilBERT models. The transformer module improves contextual understanding of news articles compared to traditional machine learning models.
 
-Implemented Components
+**Implemented Components**
 BERT embedding extraction
 DistilBERT transformer classifier
 Fine-tuning transformer models
@@ -13,7 +13,7 @@ Attention visualization
 Comparative evaluation with classical ML models
 Cross-domain generalization analysis
 
-Technologies Used
+**Technologies Used**
 PyTorch
 Hugging Face Transformers
 Scikit-learn
@@ -22,11 +22,11 @@ NumPy
 Matplotlib
 Seaborn
 
-Transformer Models Used
+**Transformer Models Used**
 DistilBERT
 BERT Embedding + Logistic Regression
 
-Workflow
+**Workflow**
 Load preprocessed dataset from Member 1 outputs
 Generate contextual embeddings using DistilBERT
 Train transformer-based classifier
@@ -34,7 +34,7 @@ Evaluate performance on validation and test datasets
 Compare results with classical machine learning models
 Visualize training curves, confusion matrix, and attention scores
 
-Evaluation Metrics
+**Evaluation Metrics**
 
 The following metrics are used:
 
@@ -45,7 +45,7 @@ F1-Score
 ROC-AUC
 Outputs Generated
 
-The transformer pipeline generates:
+**The transformer pipeline generates:**
 
 Model evaluation reports
 Confusion matrix
@@ -54,11 +54,11 @@ Radar chart comparison
 Attention visualization
 Final comparative performance plots
 
-Streamlit Deployment
+**Streamlit Deployment**
 The fake news detection application was also deployed using Streamlit to provide an interactive user interface for real-time news classification.
 https://fakenewsdetection-dm4pqnqpxdxhoizqrozpic.streamlit.app/
 
-Conclusion
+**Conclusion**
 
 This project successfully implemented a fake news detection system using both classical machine learning and transformer-based deep learning models. Traditional NLP techniques such as TF-IDF, readability analysis, and linguistic feature extraction were combined with advanced transformer architectures like DistilBERT to improve classification performance.
 
