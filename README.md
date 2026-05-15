@@ -6,13 +6,12 @@ Overview**
 This section implements transformer-based fake news detection using BERT/DistilBERT models. The transformer module improves contextual understanding of news articles compared to traditional machine learning models.
 
 **Implemented Components**
-BERT embedding extraction
-
-DistilBERT transformer classifier
-Fine-tuning transformer models
-Attention visualization
-Comparative evaluation with classical ML models
-Cross-domain generalization analysis
+* BERT embedding extraction
+* DistilBERT transformer classifier
+* Fine-tuning transformer models
+* Attention visualization
+* Comparative evaluation with classical ML models
+* Cross-domain generalization analysis
 
 **Technologies Used**
 PyTorch
