@@ -1,4 +1,46 @@
 # Fake_News_Detection
+📰 Fake News Detection Using NLP Classifiers
+
+Identify fake vs. real news articles using the LIAR dataset. Leverages linguistic features, TF-IDF, and transformer-based BERT embeddings with Logistic Regression, Gradient Boosting, and DistilBERT models.
+
+----------------------------------------------------------------------------------------------------
+
+👥 Team Members
+-----------------------------------------------------------------
+|Athulya Mannambath | Msc Computer Science in Data Analytics    |
+-----------------------------------------------------------------
+|Amrutha            | Mcs Data Analytics & Computational Science| 
+
+----------------------------------------------------------------|
+|Rasha              | Mcs Data Analytics & Computational Science| 
+-----------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+
+📌 Problem Statement & Motivation
+
+Misinformation and fake news have become a critical challenge in the digital age, influencing public opinion, elections, and societal trust. Manual fact-checking is slow and does not scale. This project builds an automated fake news detection system that classifies political statements as real or fake using Natural Language Processing techniques.
+We explore whether linguistic patterns alone — such as readability, punctuation use, and word choice — can distinguish fake news from real news, and compare classical ML models against modern transformer-based architectures.
+
+----------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Transformer Models and Deep Learning
 Overview
