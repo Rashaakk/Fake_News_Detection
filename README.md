@@ -49,7 +49,7 @@ ClassLabels MappedFake (0)pants-fire, false, barely-trueReal (1)half-true, mostl
 
 ----------------------------------------------------------------------------------------------------
 
-🔬 Methodology
+**🔬 Methodology**
 1. Data Preprocessing
 
 Lowercasing, URL removal, digit stripping, punctuation removal
