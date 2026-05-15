@@ -54,6 +54,10 @@ Radar chart comparison
 Attention visualization
 Final comparative performance plots
 
+Streamlit Deployment
+The fake news detection application was also deployed using Streamlit to provide an interactive user interface for real-time news classification.
+https://fakenewsdetection-dm4pqnqpxdxhoizqrozpic.streamlit.app/
+
 Conclusion
 
 This project successfully implemented a fake news detection system using both classical machine learning and transformer-based deep learning models. Traditional NLP techniques such as TF-IDF, readability analysis, and linguistic feature extraction were combined with advanced transformer architectures like DistilBERT to improve classification performance.
