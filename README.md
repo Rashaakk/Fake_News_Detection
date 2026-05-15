@@ -6,39 +6,55 @@ Identify fake vs. real news articles using the LIAR dataset. Leverages linguisti
 ----------------------------------------------------------------------------------------------------
 
 👥 Team Members
------------------------------------------------------------------
-|Athulya Mannambath | Msc Computer Science in Data Analytics    |
------------------------------------------------------------------
-|Amrutha            | Mcs Data Analytics & Computational Science| 
 
-----------------------------------------------------------------|
-|Rasha              | Mcs Data Analytics & Computational Science| 
------------------------------------------------------------------
+Athulya Mannambath (Msc Computer Science in Data Analytics)
+Amrutha (Mcs Data Analytics & Computational Science)
+Rasha    (Msc Data Analytics & Computational Science)
 
 ----------------------------------------------------------------------------------------------------
 
-📌 Problem Statement & Motivation
+📌 **Problem Statement & Motivation**
 
 Misinformation and fake news have become a critical challenge in the digital age, influencing public opinion, elections, and societal trust. Manual fact-checking is slow and does not scale. This project builds an automated fake news detection system that classifies political statements as real or fake using Natural Language Processing techniques.
 We explore whether linguistic patterns alone — such as readability, punctuation use, and word choice — can distinguish fake news from real news, and compare classical ML models against modern transformer-based architectures.
 
+--------------------------------------------------------------------------------------------------
+
+📊 Dataset
+Source: LIAR Dataset — a benchmark dataset for fake news detection.
+SplitSize:
+Train-->10,239 statements
+Validation-->1,283 statements
+Test-->1,266 statements
+
+
+Features:
+
+statement — the political claim being fact-checked
+label — original 6-class label: pants-fire, false, barely-true, half-true, mostly-true, true
+speaker, subject, party_affiliation, context — metadata
+
+Class Distribution (Binary):
+ClassLabels MappedFake (0)pants-fire, false, barely-trueReal (1)half-true, mostly-true, true
+
 ----------------------------------------------------------------------------------------------------
 
+🔬 Methodology
+1. Data Preprocessing
 
+Lowercasing, URL removal, digit stripping, punctuation removal
+Contraction expansion (e.g., don't → do not)
+Stopword removal using NLTK
 
+2. Linguistic Feature Engineering
+Eight hand-crafted features extracted per statement:
+FeatureDescriptionnum_charsTotal character countnum_wordsWord countnum_sentencesSentence countavg_word_lengthMean word lengthexclamation_countNumber of !question_countNumber of ?capital_ratioRatio of uppercase charactersreadabilityFlesch Reading Ease score
 
+3. Exploratory Data Analysis
 
-
-
-
-
-
-
-
-
-
-
-
+Label distribution visualisation
+Per-feature box plots comparing Fake vs. Real news
+Word clouds for fake and real news corpora
 
 
 
