@@ -11,7 +11,7 @@ Athulya Mannambath (Msc Computer Science in Data Analytics)
 
 Amrutha (Mcs Data Analytics & Computational Science)
 
-Rasha    (Msc Data Analytics & Computational Science)
+Rasha KK  (Msc Data Analytics & Computational Science)
 
 ----------------------------------------------------------------------------------------------------
 
@@ -30,14 +30,18 @@ LIAR Dataset — a benchmark dataset for fake news detection.
 SplitSize:
 
 Train-->10,239 statements
+
 Validation-->1,283 statements
+
 Test-->1,266 statements
 
 
 Features:
 
 statement — the political claim being fact-checked
+
 label — original 6-class label: pants-fire, false, barely-true, half-true, mostly-true, true
+
 speaker, subject, party_affiliation, context — metadata
 
 Class Distribution (Binary):
