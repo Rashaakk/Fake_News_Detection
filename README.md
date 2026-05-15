@@ -8,7 +8,9 @@ Identify fake vs. real news articles using the LIAR dataset. Leverages linguisti
 👥 Team Members
 
 Athulya Mannambath (Msc Computer Science in Data Analytics)
+
 Amrutha (Mcs Data Analytics & Computational Science)
+
 Rasha    (Msc Data Analytics & Computational Science)
 
 ----------------------------------------------------------------------------------------------------
@@ -21,8 +23,12 @@ We explore whether linguistic patterns alone — such as readability, punctuatio
 --------------------------------------------------------------------------------------------------
 
 📊 Dataset
-Source: LIAR Dataset — a benchmark dataset for fake news detection.
+Source: 
+
+LIAR Dataset — a benchmark dataset for fake news detection.
+
 SplitSize:
+
 Train-->10,239 statements
 Validation-->1,283 statements
 Test-->1,266 statements
@@ -55,6 +61,11 @@ FeatureDescriptionnum_charsTotal character countnum_wordsWord countnum_sentences
 Label distribution visualisation
 Per-feature box plots comparing Fake vs. Real news
 Word clouds for fake and real news corpora
+
+
+
+
+
 
 
 
