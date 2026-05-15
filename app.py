@@ -435,7 +435,7 @@ if use_sample or (train_file and valid_file and test_file):
 
         col_btn, col_clear = st.columns([1, 5])
         with col_btn:
-            predict_btn = st.button("🔍 ANALYZE", use_container_width=True)
+            predict_btn = st.button("🔍 ANALYZE", width='stretch')
 
         if predict_btn and user_input.strip():
             pred, proba = predict_single(user_input, vectorizer, selected_model)
@@ -496,7 +496,7 @@ Confidence: {"HIGH" if max(proba) > 0.75 else "MEDIUM" if max(proba) > 0.55 else
                 "F1 Score": f"{m['f1']:.3f}",
                 "ROC-AUC":  f"{m['roc_auc']:.3f}",
             })
-        st.dataframe(pd.DataFrame(summary_data), use_container_width=True, hide_index=True)
+        st.dataframe(pd.DataFrame(summary_data), width='stretch', hide_index=True)
 
         # Metric cards for selected model
         st.markdown("<br>", unsafe_allow_html=True)
@@ -540,7 +540,7 @@ Confidence: {"HIGH" if max(proba) > 0.75 else "MEDIUM" if max(proba) > 0.55 else
                     "F1-Score":  f"{row['f1-score']:.3f}",
                     "Support":   int(row['support']),
                 })
-        st.dataframe(pd.DataFrame(report_rows), use_container_width=True, hide_index=True)
+        st.dataframe(pd.DataFrame(report_rows), width='stretch', hide_index=True)
 
         # Bar chart comparison
         st.markdown("<br>", unsafe_allow_html=True)
@@ -710,7 +710,7 @@ Confidence: {"HIGH" if max(proba) > 0.75 else "MEDIUM" if max(proba) > 0.55 else
         display_cols = [c for c in display_cols if c in df_show.columns]
         st.dataframe(
             df_show[display_cols].rename(columns={'target': 'binary_label'}),
-            use_container_width=True,
+            width='stretch',
             height=400
         )
 
