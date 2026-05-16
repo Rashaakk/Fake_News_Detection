@@ -141,11 +141,13 @@ The following metrics are used:
 **Observations**
 
 Classical ML Models
-Model | AccuracyPrecision (Fake) | Recall (Fake) | F1 (Fake) | Precision (Real) | Recall (Real) | F1 (Real) | Weighted F1
 
-Logistic Regression | 0.60 | 0.54 | 0.57 | 0.55 | 0.65 | 0.63 | 0.64 | 0.61
 
-Gradient Boosting | 0.59 | 0.59 | 0.21 | 0.31 | 0.59 | 0.89 | 0.71 | 0.53
+| Model | AccuracyPrecision (Fake) | Recall (Fake) | F1 (Fake) | Precision (Real) | Recall (Real) | F1 (Real) | Weighted F1 |
+
+| Logistic Regression | 0.60 | 0.54 | 0.57 | 0.55 | 0.65 | 0.63 | 0.64 | 0.61 |
+
+| Gradient Boosting | 0.59 | 0.59 | 0.21 | 0.31 | 0.59 | 0.89 | 0.71 | 0.53 |
 
 
 * Logistic Regression produced the most balanced results across both classes making it reliable for detecting both.
