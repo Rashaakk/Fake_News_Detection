@@ -53,20 +53,33 @@ ClassLabels MappedFake (0)pants-fire, false, barely-trueReal (1)half-true, mostl
 1. Data Preprocessing
 
 Lowercasing, URL removal, digit stripping, punctuation removal
+
 Contraction expansion (e.g., don't → do not)
+
 Stopword removal using NLTK
 
 2. Linguistic Feature Engineering
-Eight hand-crafted features extracted per statement:
-FeatureDescriptionnum_charsTotal character countnum_wordsWord countnum_sentencesSentence countavg_word_lengthMean word lengthexclamation_countNumber of !question_countNumber of ?capital_ratioRatio of uppercase charactersreadabilityFlesch Reading Ease score
 
-3. Exploratory Data Analysis
+Eight hand-crafted features extracted per statement:
+
+| Feature | Description |
+|---------|-------------|
+| num_chars | Total character count |
+| num_words | Word count |
+| num_sentences | Sentence count |
+| avg_word_length | Mean word length |
+| exclamation_count | Number of ! |
+| question_count | Number of ? |
+| capital_ratio | Ratio of uppercase characters |
+| readability | Flesch Reading Ease score |
+
+4. Exploratory Data Analysis
 
 Label distribution visualisation
 Per-feature box plots comparing Fake vs. Real news
 Word clouds for fake and real news corpora
 
-**Classical Machine Learning Models**
+4. Classical Machine Learning Models
 
 * Combined feature matrix constructed by stacking word-level TF-IDF (unigrams and bigrams), character-level TF-IDF (2–4 grams), and the eight hand-crafted linguistic features
 * Logistic Regression trained on the combined matrix with class balancing to handle label skew
@@ -79,11 +92,12 @@ Word clouds for fake and real news corpora
 * Cross-domain generalisation tested by evaluating on health and science topic statements after training on political statements
 
 
+5. Transformer Models
+
+This section implements transformer-based fake news detection using BERT/DistilBERT models. The transformer module improves contextual understanding of news articles compared to traditional machine learning models.
 
 **Transformer Models and Deep Learning
 Overview**
-
-This section implements transformer-based fake news detection using BERT/DistilBERT models. The transformer module improves contextual understanding of news articles compared to traditional machine learning models.
 
 **Implemented Components**
 * BERT embedding extraction
