@@ -66,7 +66,17 @@ Label distribution visualisation
 Per-feature box plots comparing Fake vs. Real news
 Word clouds for fake and real news corpora
 
+**Classical Machine Learning Models**
 
+* Combined feature matrix constructed by stacking word-level TF-IDF (unigrams and bigrams), character-level TF-IDF (2–4 grams), and the eight hand-crafted linguistic features
+* Logistic Regression trained on the combined matrix with class balancing to handle label skew
+* Hyperparameters tuned using GridSearchCV with 5-fold stratified cross-validation
+* XGBoost used as the gradient boosting classifier, selected for its efficiency on sparse matrices
+* XGBoost optimised using RandomizedSearchCV across learning rate, tree depth, and subsampling ratio
+* Both models evaluated using accuracy, weighted F1-score, and ROC-AUC on the held-out test set
+* Feature importance analysis performed using logistic regression coefficients to identify top fake and real news indicators
+* SHAP values used to interpret XGBoost predictions at the feature level
+* Cross-domain generalisation tested by evaluating on health and science topic statements after training on political statements
 
 
 
@@ -126,6 +136,23 @@ The following metrics are used:
 * Radar chart comparison
 * Attention visualization
 * Final comparative performance plots
+
+
+**Observations**
+
+Classical ML Models
+Model | AccuracyPrecision (Fake) | Recall (Fake) | F1 (Fake) | Precision (Real) | Recall (Real) | F1 (Real) | Weighted F1
+
+Logistic Regression | 0.60 | 0.54 | 0.57 | 0.55 | 0.65 | 0.63 | 0.64 | 0.61
+
+Gradient Boosting | 0.59 | 0.59 | 0.21 | 0.31 | 0.59 | 0.89 | 0.71 | 0.53
+
+
+* Logistic Regression produced the most balanced results across both classes making it reliable for detecting both.
+* Gradient Boosting is heavily biased toward the Real class meaning it misses most fake news articles.
+* DistilBERT outperformed all classical models with the highest accuracy and F1, demonstrating the advantage of contextual embeddings over bag-of-words features.
+* BERT Embeddings + LR offered a strong middle ground — better than classical ML without the overhead of full fine-tuning.
+
 
 **Streamlit Deployment**
 The fake news detection application was also deployed using Streamlit to provide an interactive user interface for real-time news classification.
