@@ -80,9 +80,6 @@ Word clouds for fake and real news corpora
 
 
 
-
-
-
 **Transformer Models and Deep Learning
 Overview**
 
@@ -140,8 +137,6 @@ The following metrics are used:
 
 **Observations**
 
-Classical ML Models
-
 | Model | Accuracy | Precision (Fake) | Recall (Fake) | F1 (Fake) | Precision (Real) | Recall (Real) | F1 (Real) | Weighted F1 |
 |-------|----------|-----------------|---------------|-----------|-----------------|---------------|-----------|-------------|
 | Logistic Regression | 0.60 | 0.54 | 0.57 | 0.55 | 0.65 | 0.63 | 0.64 | 0.61 |
@@ -154,6 +149,7 @@ Classical ML Models
 
 
 **Streamlit Deployment**
+
 The fake news detection application was also deployed using Streamlit to provide an interactive user interface for real-time news classification.
 - https://fakenewsdetection-dm4pqnqpxdxhoizqrozpic.streamlit.app/
 
